@@ -177,5 +177,16 @@ return [
   "Edit_Details" => "Edit Details",
   "Placeholders" => "Placeholders",
   "Toasts" => "Toasts",
-
+  // CUSTOM
+  // Titles
+  "Timers" => "Timers",
+  "Fitness" => "Fitness",
+  "News" => "News",
+  "Journals" => "Journals",
+  // Pages
+  "Pomodoro_Timer" => "Pomodoro Timer",
+  "Meditation_Timer" => "Meditation Timer",
+  "Body_Measurements" => "Body Measurements",
+  "Positive_News" => "Positive News",
+  "Worry_Journal" => "Worry Journal",
 ];

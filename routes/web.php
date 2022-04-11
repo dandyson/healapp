@@ -26,3 +26,7 @@ Route::get('{any}', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //Language Translation
 Route::get('index/{locale}', [App\Http\Controllers\HomeController::class, 'lang']);
+
+// TIMERS
+// Pomodoro Timer
+Route::get('pomodoro-timer', [App\Http\Controllers\PomodoroController::class, 'index'])->name('index');
