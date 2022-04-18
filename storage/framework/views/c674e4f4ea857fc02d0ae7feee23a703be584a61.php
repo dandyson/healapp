@@ -49,4 +49,7 @@
 <!-- App js -->
 <script src="<?php echo e(URL::asset('assets/js/app.min.js')); ?>"></script>
 
+
+<script src="<?php echo e(mix('/js/app.js')); ?>"></script>
+
 <?php echo $__env->yieldContent('script-bottom'); ?><?php /**PATH /Applications/MAMP/htdocs/heal-app-2/resources/views/layouts/vendor-scripts.blade.php ENDPATH**/ ?>
