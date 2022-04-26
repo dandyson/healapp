@@ -10,18 +10,13 @@
                 <li class="menu-title" key="t-menu">@lang('translation.Timers')</li>
 
                 <li>
-                    {{-- <a href="/pomodoro-timer" class="waves-effect active">
-                        <i class="bx bx-timer"></i>
-                        <span key="t-pomodoro-timer">@lang('translation.Pomodoro_Timer')</span>
-                    </a> --}}
-
                     <a href="pomodoro-timer" class="waves-effect" key="t-pomodoro-timer">
                         <i class="bx bx-timer"></i>
                         @lang('translation.Pomodoro_Timer')
                     </a>
                 </li>
                 <li>
-                    <a href="layouts-horizontal" class="waves-effect ">
+                    <a href="layouts-horizontal" class="waves-effect">
                         <i class="mdi mdi-yin-yang"></i>
                         @lang('translation.Meditation_Timer')
                     </a>
@@ -39,7 +34,7 @@
                 <li class="menu-title" key="">@lang('translation.News')</li>
 
                 <li>
-                    <a href="" class="waves-effect">
+                    <a href="positive-news" class="waves-effect" key="t-positive-news">
                         <i class="bx bx-news"></i>
                         @lang('translation.Positive_News')
                     </a>

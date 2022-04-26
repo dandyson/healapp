@@ -1,17 +1,17 @@
 @extends('layouts.master')
 
-@section('title') @lang('translation.Pomodoro_Timer') @endsection
+@section('title') @lang('translation.Positive_News') @endsection
 
 @section('content')
 
     @component('components.breadcrumb')
-        @slot('li_1') Timers @endslot
-        @slot('title') Pomodoro Timer @endslot
+        @slot('li_1') News @endslot
+        @slot('title') Positive News @endslot
     @endcomponent
 
     <div class="row">
         <div class="col-12">
-            <pomodoro-timer></pomodoro-timer>
+            <positive-news></positive-news>
         </div>
     </div>
 

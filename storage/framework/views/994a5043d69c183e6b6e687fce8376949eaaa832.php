@@ -9,8 +9,7 @@
 
     <div class="row">
         <div class="col-12">
-            component here
-            <example-component></example-component>
+            <pomodoro-timer></pomodoro-timer>
         </div>
     </div>
 
