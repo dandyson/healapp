@@ -5515,7 +5515,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    axios__WEBPACK_IMPORTED_MODULE_0___default().get("https://www.positive.news/", {
+      headers: {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }).then(function (res) {
+      var $ = cheerio__WEBPACK_IMPORTED_MODULE_1___default().load(res.data);
+      var span = $(".card__title");
+      console.log(span);
+    })["catch"](function (err) {
+      console.log(err);
+    });
+  }
 });
 
 /***/ }),
