@@ -22,15 +22,6 @@
                     </a>
                 </li>
 
-                <li class="menu-title" key=""><?php echo app('translator')->get('translation.Fitness'); ?></li>
-
-                <li>
-                    <a href="" class="waves-effect">
-                        <i class="bx bx-body"></i>
-                        <?php echo app('translator')->get('translation.Body_Measurements'); ?>
-                    </a>
-                </li>
-
                 <li class="menu-title" key=""><?php echo app('translator')->get('translation.News'); ?></li>
 
                 <li>

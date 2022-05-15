@@ -5512,20 +5512,53 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    routes: Object
+  },
+  data: function data() {
+    return {
+      positiveNewsData: '',
+      positiveNewsLoading: true
+    };
+  },
   mounted: function mounted() {
-    axios__WEBPACK_IMPORTED_MODULE_0___default().get("https://www.positive.news/", {
-      headers: {
-        "Access-Control-Allow-Origin": "*"
-      }
-    }).then(function (res) {
-      var $ = cheerio__WEBPACK_IMPORTED_MODULE_1___default().load(res.data);
-      var span = $(".card__title");
-      console.log(span);
-    })["catch"](function (err) {
-      console.log(err);
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_0___default().get(this.routes.newsFetch).then(function (res) {
+      _this.positiveNewsData = res.data.data["positive-news"];
+      _this.positiveNewsLoading = false;
+    })["catch"](function (error) {
+      return console.error(error);
     });
   }
 });
@@ -49732,9 +49765,65 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("div", [
+    _c("h1", [_vm._v("Positive.News")]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "row row-sm" },
+        [
+          _vm.positiveNewsLoading === true
+            ? _c("div", { staticClass: "d-flex justify-content-center" }, [
+                _vm._m(0),
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm._l(_vm.positiveNewsData, function (item, index) {
+            return _c("div", { key: index, staticClass: "col-md-4 col-lg-4" }, [
+              _c("div", { staticClass: "card" }, [
+                _c("a", { attrs: { target: "_blank", href: item["link"] } }, [
+                  _c("img", {
+                    staticClass: "img-fluid card-img-top",
+                    attrs: { alt: "Image", src: item["image"] },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-body " }, [
+                  _c("a", { attrs: { target: "_blank", href: item["link"] } }, [
+                    _c("h3", { staticClass: "card-title news-headline" }, [
+                      _vm._v(_vm._s(item["title"])),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "card-text" }, [
+                    _vm._v(_vm._s(item["description"])),
+                  ]),
+                ]),
+              ]),
+            ])
+          }),
+        ],
+        2
+      ),
+    ]),
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "spinner-border text-primary m-1",
+        attrs: { role: "status" },
+      },
+      [_c("span", { staticClass: "sr-only" }, [_vm._v("Loading...")])]
+    )
+  },
+]
 render._withStripped = true
 
 

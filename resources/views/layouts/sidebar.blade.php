@@ -21,16 +21,7 @@
                         @lang('translation.Meditation_Timer')
                     </a>
                 </li>
-
-                <li class="menu-title" key="">@lang('translation.Fitness')</li>
-
-                <li>
-                    <a href="" class="waves-effect">
-                        <i class="bx bx-body"></i>
-                        @lang('translation.Body_Measurements')
-                    </a>
-                </li>
-
+                
                 <li class="menu-title" key="">@lang('translation.News')</li>
 
                 <li>

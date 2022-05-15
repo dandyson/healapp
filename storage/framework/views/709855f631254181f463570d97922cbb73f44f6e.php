@@ -7,9 +7,15 @@
         <?php $__env->slot('title'); ?> Positive News <?php $__env->endSlot(); ?>
     <?php echo $__env->renderComponent(); ?>
 
+    <?php
+        $routes = [
+            'newsFetch' => route('news-fetch'),
+        ]   
+    ?>
+
     <div class="row">
         <div class="col-12">
-            <positive-news></positive-news>
+            <positive-news :routes='<?php echo json_encode($routes, 15, 512) ?>'></positive-news>
         </div>
     </div>
 

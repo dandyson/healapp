@@ -186,7 +186,6 @@ return [
   // Pages
   "Pomodoro_Timer" => "Pomodoro Timer",
   "Meditation_Timer" => "Meditation Timer",
-  "Body_Measurements" => "Body Measurements",
   "Positive_News" => "Positive News",
   "Worry_Journal" => "Worry Journal",
 ];
