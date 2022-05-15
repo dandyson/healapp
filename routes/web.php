@@ -22,11 +22,14 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'root'])->name('roo
 Route::post('/update-profile/{id}', [App\Http\Controllers\HomeController::class, 'updateProfile'])->name('updateProfile');
 Route::post('/update-password/{id}', [App\Http\Controllers\HomeController::class, 'updatePassword'])->name('updatePassword');
 
-Route::get('{any}', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
-
 //Language Translation
 Route::get('index/{locale}', [App\Http\Controllers\HomeController::class, 'lang']);
 
 // TIMERS
 // Pomodoro Timer
-Route::get('pomodoro-timer', [App\Http\Controllers\PomodoroController::class, 'index'])->name('index');
+Route::get('/pomodoro-timer', [App\Http\Controllers\PomodoroController::class, 'index'])->name('index');
+
+// NEWS
+// Positive news
+// Pomodoro Timer
+Route::get('/positive-news', [App\Http\Controllers\PositiveNewsController::class, 'index'])->name('index');
