@@ -16,12 +16,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="layouts-horizontal" class="waves-effect">
+                    <a href="meditation-timer" class="waves-effect" key="t-pomodoro-timer">
                         <i class="mdi mdi-yin-yang"></i>
                         <?php echo app('translator')->get('translation.Meditation_Timer'); ?>
                     </a>
                 </li>
-
+                
                 <li class="menu-title" key=""><?php echo app('translator')->get('translation.News'); ?></li>
 
                 <li>

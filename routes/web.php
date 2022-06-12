@@ -28,6 +28,8 @@ Route::get('index/{locale}', [App\Http\Controllers\HomeController::class, 'lang'
 // TIMERS
 // Pomodoro Timer
 Route::get('/pomodoro-timer', [App\Http\Controllers\PomodoroController::class, 'index'])->name('index');
+// Meditation Timer
+Route::get('/meditation-timer', [App\Http\Controllers\MeditationTimerController::class, 'index'])->name('index');
 
 // NEWS
 // Positive news

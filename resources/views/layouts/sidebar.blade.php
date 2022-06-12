@@ -16,7 +16,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="layouts-horizontal" class="waves-effect">
+                    <a href="meditation-timer" class="waves-effect" key="t-pomodoro-timer">
                         <i class="mdi mdi-yin-yang"></i>
                         @lang('translation.Meditation_Timer')
                     </a>

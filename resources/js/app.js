@@ -8,8 +8,6 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 
-const cheerio = require('cheerio');
-
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -21,7 +19,11 @@ const cheerio = require('cheerio');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+// TIMERS
 Vue.component('pomodoro-timer', require('./components/PomdoroTimer.vue').default);
+Vue.component('meditation-timer', require('./components/MeditationTimer.vue').default);
+
+// NEWS
 Vue.component('positive-news', require('./components/PositiveNews.vue').default);
 
 /**
