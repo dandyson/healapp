@@ -188,7 +188,9 @@ export default {
         },
 
         decrease() {
-            this.timer.minutes--;
+            if (this.timer.minutes > 0) {
+                this.timer.minutes--;
+            }
         }
 
     }

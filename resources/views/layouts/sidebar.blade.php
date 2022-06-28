@@ -34,7 +34,7 @@
                 <li class="menu-title" key="">@lang('translation.Journals')</li>
 
                 <li>
-                    <a href="" class="waves-effect">
+                    <a href="worry-journal" class="waves-effect" key="t-worry-journal">
                         <i class="bx bx-book-bookmark"></i>
                         @lang('translation.Worry_Journal')
                     </a>

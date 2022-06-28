@@ -33,5 +33,8 @@ Route::get('/meditation-timer', [App\Http\Controllers\MeditationTimerController:
 
 // NEWS
 // Positive news
-// Pomodoro Timer
 Route::get('/positive-news', [App\Http\Controllers\PositiveNewsController::class, 'index'])->name('index');
+
+// JOURNALS
+// Worry Journal
+Route::get('/worry-journal', [App\Http\Controllers\WorryJournalController::class, 'index'])->name('index');

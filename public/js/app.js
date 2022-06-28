@@ -5416,7 +5416,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       this.timer.minutes++;
     },
     decrease: function decrease() {
-      this.timer.minutes--;
+      if (this.timer.minutes > 0) {
+        this.timer.minutes--;
+      }
     }
   }
 });
